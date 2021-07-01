@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: ./webservice
+    volumes:
+      - ./webservice:/usr/src/app
+    ports:
+      - 9000:3000
+
+
+
